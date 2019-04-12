@@ -316,8 +316,12 @@ img {
   border-radius: 150px;
   border: 2px solid black;
   box-shadow: 0px 0px 25px 3px #020202;
+  z-index: -1;
 }
 .dogimg {
   border: none;
   box-shadow: 0px 0px 25px 3px #020202;
+}
+.topbar {
+  z-index: 9999;
 }
