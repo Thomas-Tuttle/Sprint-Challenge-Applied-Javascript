@@ -23,8 +23,11 @@ class TabLink {
      this.cards = Array.from(this.cards).map(elem => new TabCard(elem));
 
     // Add a click event that invokes this.selectTab
-    this.tabElement.addEventListener('click', _ => this.selectTab());
-    }
+    //this.tabElement.addEventListener('click', _ => this.selectTab());
+    this.tabElement.addEventListener('click', () => this.selectTab());
+    this.tabElement.addEventListener('click', () => this.fade());
+    
+    };
 
   selectTab(){
 
@@ -45,6 +48,13 @@ class TabLink {
   
     // Notice we are looping through the this.cards array and invoking selectCard() from the TabCard class. Just un-comment the code and study what is happening here.
     this.cards.forEach(card => card.selectCard());
+
+    
+  }
+  fade () {
+    $(function() {
+      $('.card').hide().fadeIn(1800);
+    });
   }
 }
 

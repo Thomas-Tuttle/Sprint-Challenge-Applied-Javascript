@@ -154,7 +154,6 @@ body {
   flex: 1;
 }
 .tabs {
-  border-radius: 15px;
   border-bottom: 1px solid lightgrey;
   display: flex;
   justify-content: center;
