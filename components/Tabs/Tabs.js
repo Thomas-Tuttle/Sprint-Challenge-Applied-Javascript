@@ -25,7 +25,7 @@ class TabLink {
     // Add a click event that invokes this.selectTab
     //this.tabElement.addEventListener('click', _ => this.selectTab());
     this.tabElement.addEventListener('click', () => this.selectTab());
-    this.tabElement.addEventListener('click', () => this.fade());
+    
     
     };
 
@@ -51,11 +51,8 @@ class TabLink {
 
     
   }
-  fade () {
-    $(function() {
-      $('.card').hide().fadeIn(1800);
-    });
-  }
+  
+  
 }
 
 class TabCard {
